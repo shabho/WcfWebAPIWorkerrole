@@ -11,7 +11,7 @@ namespace WorkerRole1.Impl
     {
         public ProductData[] Getall()
         {
-            return new[] { new ProductData {Name = "Item 1" , SKU = "1234"} };
+            return new[] { new ProductData {Name = "Item 1" , SKU = "34"} };
         }
     }
 }
