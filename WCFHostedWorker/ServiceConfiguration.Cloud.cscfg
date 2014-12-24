@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WCFHostedWorker" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="admin12" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHUDAkwDoim7Qr+SAQ3Tvk0wDQYJKoZIhvcNAQEBBQAEggEAJyrLSit9r8wsynHfD0CMBxsXNYsYJG15vidsNIPQB+VC6BPxWe1UGPiGUiI5HqtUwALOBEyFWBYdhIlKfLA/M7oDkM06cVMKUcSpTObBbE4MspBjgHsB8bcLi8tbtZC+fnkz2JxZyu4SBmI/40j/yoI7wGVtnchjX0KFIeAXD+BmFB9LXP2D/khTM8+e7bCqcTsq7az84djKKFj26bcd8sW/vgsNMbMUDYEcvVQmdkKyHMJmaCotPTdu27hFBRCdrmahkfPTkU5Ha8lWoTI9h/JzG3jwf7A5TOcgnsbGEV1anta+NxkZ655OD+Vjm/i40aSO/DgFIOoSLMqixX9i/TAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECGhiaQN4GA3ZgBDIjSMghDriuU4XQwuPPY5f" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2016-02-20T23:59:59.0000000+00:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="E52E1C7D272ADF9F7B3D23FF336A87DBEDD9DF3C" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
